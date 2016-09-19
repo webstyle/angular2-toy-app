@@ -9,13 +9,7 @@
         </ul>
     </div>
     <div class="mdl-cell mdl-cell--8-col">
-        <div *ngIf="selectedHero">
-            <h2>{{selectedHero.name}} details!</h2>
-            <div><label>id: </label>{{selectedHero.id}}</div>
-            <div>
-                <input class="mdl-textfield__input" [(ngModel)]="selectedHero.name">
-            </div>
-        </div>
+        <app-hero-detail [hero]="selectedHero"></app-hero-detail>
     </div>
 </div>
 

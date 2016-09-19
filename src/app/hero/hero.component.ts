@@ -18,9 +18,9 @@ export class HeroComponent {
 
   selectedHero: Hero;
 
-  openHero(hero): void {
-    console.log(hero);
-    this.selectedHero = hero;
+  openHero(param: Hero): void {
+    this.selectedHero = param;
+    console.log('selectedHero', this.selectedHero);
   }
 
 

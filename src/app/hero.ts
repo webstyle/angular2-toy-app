@@ -9,4 +9,7 @@ const HEROES:Hero[] = [{
 }, {
     id: 2,
     name: 'Nice one'
+}, {
+    id: 3,
+    name: 'Rester'
 }];

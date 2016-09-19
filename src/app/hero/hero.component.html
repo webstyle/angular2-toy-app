@@ -1,7 +1,21 @@
-<div>
-    <ul>
-        <li class="item" *ngFor="let hero of heroes" (click)="openHero(hero)">
-            <span>{{hero.name}}</span>
-        </li>
-    </ul>
+<div class="mdl-grid">
+    <div class="mdl-cell mdl-cell--4-col">
+        <ul class="demo-list-item mdl-list">
+            <li class="mdl-list__item item" *ngFor="let hero of heroes">
+                <button class="mdl-button mdl-js-button mdl-js-ripple-effect" (click)="openHero(hero)">
+                    {{hero.name}}
+                </button>
+            </li>
+        </ul>
+    </div>
+    <div class="mdl-cell mdl-cell--8-col">
+        <div *ngIf="selectedHero">
+            <h2>{{selectedHero.name}} details!</h2>
+            <div><label>id: </label>{{selectedHero.id}}</div>
+            <div>
+                <input class="mdl-textfield__input" [(ngModel)]="selectedHero.name">
+            </div>
+        </div>
+    </div>
 </div>
+

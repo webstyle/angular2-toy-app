@@ -1,0 +1,9 @@
+<div *ngIf="selectedHero">
+    <h1>{{hero.name}} deatils</h1>
+    <form action="#">
+        <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="text" id="sample1" ([(ngModel)]="hero.name">
+            <label class="mdl-textfield__label" for="sample1">Text...</label>
+        </div>
+    </form>
+</div>

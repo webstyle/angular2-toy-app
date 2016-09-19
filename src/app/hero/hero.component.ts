@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Hero } from '../hero';
 
 @Component({
@@ -7,7 +7,7 @@ import { Hero } from '../hero';
   styleUrls: ['./hero.component.css']
 })
 
-export class HeroComponent implements OnInit {
+export class HeroComponent {
   heroes:Hero[] = [{
       id: 1,
       name:'Tester'
@@ -15,14 +15,13 @@ export class HeroComponent implements OnInit {
       id: 2,
       name: 'Nice one'
     }];
+
   selectedHero: Hero;
-  openHero(hero: Hero) {
-    selectedHero = hero;
+
+  openHero(hero): void {
+    console.log(hero);
+    this.selectedHero = hero;
   }
 
-  constructor() { }
-
-  ngOnInit() {
-  }
 
 }

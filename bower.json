@@ -1,0 +1,17 @@
+{
+  "name": "my-new-app",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Farrukh <webstyle@protonmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/WebStyle/angular2-toy-app",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
